@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Тестовое задание фронтенд разработчика
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Описание
+Для выполнения тестового задания вам потребуется установить [NodeJS](https://nodejs.org/en) и [Git](https://git-scm.com/).  
+Репозиторий представляет из себя типовой проект на базе архитектуры [Create React App](https://create-react-app.dev/).  
+Запуск проекта осуществляется в соотвествии c официальной [документацией](https://create-react-app.dev/docs/getting-started).  
+Разработка должна выполняться с учетом базовых принципов [React Single Page Application](https://legacy.reactjs.org/docs/faq-structure.html).  
+Перед выполнением технического задания выполните [форк](https://docs.github.com/ru/get-started/quickstart/fork-a-repo) репозитория.  
+Последующие действия необходимо выполнять в [форке](https://docs.github.com/ru/get-started/quickstart/fork-a-repo), придерживаясь общей концепции при работе с [git](https://git-scm.com/) репозиториями.  
 
-## Available Scripts
+### Цели
+Разработать React компонент для отображения линейного графика на базе библиотеки [TimeChart](https://github.com/huww98/TimeChart) написаной на чистом [JavaScript](https://ru.wikipedia.org/wiki/JavaScript).  
+Разработать механизм получения скриншота графика в виде изображения [PNG/JPG](https://ru.wikipedia.org/wiki/PNG).  
+Разработать демонстрационный интерфейс для проверки тестового задания
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Техническое задание  
+1. Разработать [React](https://create-react-app.dev/) компонент на базе библиотеки [TimeChart](https://github.com/huww98/TimeChart).  
+  1.1 Компонент должен учитывать жизненые циклы [React](https://create-react-app.dev/): `componentDidMount`, `componentDidUpdate`, `componentWillUnmount` и т.д.  
+  1.2 Компонент должен поддерживать минимальное количество [пропсов](https://react.dev/learn/passing-props-to-a-component): `series` и `yRange` аналогично библиотеке [TimeChart](https://github.com/huww98/TimeChart), остальное по желанию.  
+  1.3 Все пропсы компонента должны быть динамические.  
+  1.4 Компонент должен быть переиспользуемым.  
+  1.5 Минимальное количество подключенных плагинов к библиотеке [TimeChart](https://github.com/huww98/TimeChart): `lineChart`, `d3Axis`, остальное по желанию.    
+2. Разработать механизм получения скриншота графика в виде изображения [PNG/JPG](https://ru.wikipedia.org/wiki/PNG).  
+  2.1 При генерации изображения запрещено полагаться на входящие пропсы данных [React](https://create-react-app.dev/) компонента.  
+  2.2 При генерации изображения запрещено полагаться на входящий набор данных, передаваемых в пропсы компонента.  
+  2.3 Запрещено явно обращаться к сгенерированному набору данных для отрисовки графика.  
+  2.4 Все остальные способы разрешены!  
+4. Демонстрационный интерфейс.  
+  3.1 Отобразить на одном экране с применением разработанного [React](https://create-react-app.dev/) компонента (см. п 1 и п 1.4) три графика: **График 1**, **График 2**, **График 3**.  
+  3.2 Под каждым графиком должны быть кнопки/панели для динамического изменения пропсов компонента (см. п 1.2 и 1.3).  
+  3.3 Под каждым графиком должна быть кнопка/панель для получения скриншота графика.  
+  3.4 Запрещено внедрять демонстрационный интерфейс внутрь разработанного компонента (см. п 1).  
+  3.5 При разработке демонстрационного интерфейса необходимо использовать готовые UI библиотеки ([material-ui](https://mui.com/), [blueprintjs](https://blueprintjs.com/) и т.д).  
+  3.6 Творческий подход и навыки `UI/UX` приветствуются!
