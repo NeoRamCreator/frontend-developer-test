@@ -3,7 +3,7 @@
 ### Описание
 Для выполнения тестового задания вам потребуется установить [NodeJS](https://nodejs.org/en) и [Git](https://git-scm.com/).  
 Репозиторий представляет из себя типовой проект на базе архитектуры [Create React App](https://create-react-app.dev/).  
-Запуск проекта осуществляется в соотвествии c официальной [документацией](https://create-react-app.dev/docs/getting-started).  
+Запуск проекта осуществляется в соответствии c официальной [документацией](https://create-react-app.dev/docs/getting-started).  
 Разработка должна выполняться с учетом базовых принципов [React Single Page Application](https://legacy.reactjs.org/docs/faq-structure.html).  
 Перед выполнением технического задания выполните [форк](https://docs.github.com/ru/get-started/quickstart/fork-a-repo) репозитория.  
 Последующие действия необходимо выполнять в [форке](https://docs.github.com/ru/get-started/quickstart/fork-a-repo), придерживаясь общей концепции при работе с [git](https://git-scm.com/) репозиториями.  
